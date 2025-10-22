@@ -74,46 +74,29 @@ body {
   margin-top: 100px;
 }
 
-/* style for buttons */
-.button { 
-  background-color: #5FB7CF;
+/* button styles */
+.button, .button1, .button2 {
   border: none;
-  color: rgb(255, 255, 255);
+  color: #fff;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 12px;
+  transition: background-color 0.2s ease;
 }
 
-/* style for sign in button */
-.button1 { 
+/* individual colors */
+.button {
+  background-color: #5FB7CF; 
+}
+
+.button1 {
   background-color: #5a79c8;
-  border: none;
-  color: rgb(255, 255, 255);
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;
 }
 
-.button2 { /* style for register button */
-  background-color: #3c339a;
-  border: none;
-  color: rgb(255, 255, 255);
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;
+.button2 {
+  background-color: #3c339a; 
 }
