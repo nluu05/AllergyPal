@@ -31,6 +31,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px; /* spacing between buttons */
+  padding: 0 20px;
 }
 
 /* inside the navigation bar */
@@ -52,6 +53,17 @@ body {
 .topnav a.active {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
+}
+
+/* logo */
+.logo-link:hover img {
+  background-color: transparent;
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.topnav a.logo-link:hover {
+  background-color: transparent;
 }
 
 /* main title */
