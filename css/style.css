@@ -1,4 +1,9 @@
 /* general page layout */
+main {
+  padding-top: 10px; /* or slightly more than your navbar height */
+  text-align: center;
+}
+
 body {
   background-color: #AEE4ED;
   margin: 0;
