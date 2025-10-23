@@ -99,13 +99,24 @@ body {
 /* bottom information section */
 footer { 
   position: relative;
-  text-align: center;
+  text-align: left;
   bottom: 0;
   padding: 20px;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
   border-top: 1px solid #ddd;
+}
+
+footer a {
+  color: #0077aa;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #005577;
+  text-decoration: underline;
 }
 
 /* button styles */

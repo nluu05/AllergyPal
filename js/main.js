@@ -1,16 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Load the navbar HTML into the #navbar container
+  // Load Navbar
   fetch("includes/navbar.html")
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Navbar fetch failed: ${response.status}`);
-      }
-      return response.text();
-    })
-    .then(html => {
-      document.getElementById("navbar").innerHTML = html;
-    })
-    .catch(error => {
-      console.error("Error loading navbar:", error);
-    });
+    .then(res => res.ok ? res.text() : Promise.reject(res))
+    .then(html => (document.getElementById("navbar").innerHTML = html))
+    .catch(err => console.error("Error loading navbar:", err));
+
+  // Load Footer
+  fetch("includes/footer.html")
+    .then(res => res.ok ? res.text() : Promise.reject(res))
+    .then(html => (document.getElementById("footer").innerHTML = html))
+    .catch(err => console.error("Error loading footer:", err));
 });
