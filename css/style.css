@@ -29,17 +29,29 @@ body {
   position: fixed;
 }
 
+/* logo home redirect */
+
 .nav-logo {
   height: 60px;
   margin-left: 30px;
   cursor: pointer;
 }
 
+.logo-link:hover img {
+  background-color: transparent;
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.topnav a.logo-link:hover {
+  background-color: transparent;
+}
+
 /* nav link spacing */
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 10px; /* spacing between buttons */
+  gap: 10px; 
   padding: 0 20px;
 }
 
@@ -64,15 +76,20 @@ body {
   color: rgb(0, 0, 0);
 }
 
-/* logo */
-.logo-link:hover img {
+/* nav bar images */
+
+.nav-icon {
+  width: 50px;
+  height: 150px;
+  background-color: transparent;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-icon:hover img {
   background-color: transparent;
   transform: scale(1.05);
   filter: brightness(1.1);
-}
-
-.topnav a.logo-link:hover {
-  background-color: transparent;
 }
 
 /* main title */
