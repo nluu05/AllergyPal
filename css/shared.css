@@ -1,7 +1,7 @@
 /* general page layout */
 main {
   flex: 1;
-  padding-top: 10px; /* or slightly more than your navbar height */
+  padding-top: 10px; 
   text-align: center;
 }
 
@@ -90,6 +90,16 @@ body {
   background-color: transparent;
   transform: scale(1.05);
   filter: brightness(1.1);
+}
+
+.icon-link:hover img {
+  background-color: #5FB7CF;
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.topnav a.icon-link:hover {
+  background-color: transparent;
 }
 
 /* main title */
