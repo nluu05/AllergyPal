@@ -4,28 +4,56 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
-  background-color: #ffffff
+  background-color: var(--color-main);
 }
 
 /* ===== contents ===== */
 .profile-container {
   height: auto;
   display: flex;
-  justify-content: space-between;
-  background-color: var(--color-secondary);
-  padding: 0px 100px;
+  flex-direction: row;
+  background-color: var(--color-main);
+  margin: 0px 40px 5rem 50px;
+  padding-right: 1rem;
 }
 
 .profile-main {
   display: flex;
   flex-direction: column;
+  padding-left: 6rem;
 } 
 
 .profile-allergens-container {
   display: flex;
   flex-direction: row;
-  background-color: #AEE4ED;
+  text-align: left;
+  margin-left: 5rem;
+}
+
+.button-row {
+  display: flex;
+  height: 3rem;
+  flex-direction: row;
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.allergen-config {
+  border: none;
+  background-color: var(--color-dark-blue);
+  color: var(--color-main);
+  width: 12rem;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
 }

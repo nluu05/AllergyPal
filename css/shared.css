@@ -1,9 +1,10 @@
 /* ===== globals ===== */
 
 :root {
-  --color-main: #ffffff;      /* Main color */
-  --color-secondary: #AEE4ED; /* Secondary color */
-  --color-accent: #5FB7CF;    /* Accent color */
+  --color-main: #ffffff;      
+  --color-secondary: #AEE4ED;
+  --color-accent: #5FB7CF;   
+  --color-dark-blue: #3c339a;
 }
 
 
