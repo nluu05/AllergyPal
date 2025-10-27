@@ -4,7 +4,11 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: auto;
+}
+
+main {
+  padding-top: 10rem;
 }
 
 body {
@@ -17,14 +21,23 @@ body {
   display: flex;
   flex-direction: row;
   background-color: var(--color-main);
-  margin: 0px 40px 5rem 50px;
-  padding-right: 1rem;
+  margin-left: 0.5vw;
+  padding-right: 1vw;
 }
 
 .profile-main {
   display: flex;
   flex-direction: column;
-  padding-left: 6rem;
+  padding-left: 7vw;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 3vw;
+  }
 } 
 
 .profile-allergens-container {
@@ -32,6 +45,10 @@ body {
   flex-direction: row;
   text-align: left;
   margin-left: 5rem;
+
+  h1 {
+    font-size: 3vw;
+  }
 }
 
 .button-row {
@@ -47,13 +64,19 @@ body {
   border: none;
   background-color: var(--color-dark-blue);
   color: var(--color-main);
-  width: 12rem;
+  width: 18vw;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5vw;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 12px;
   transition: background-color 0.2s ease;
+}
+
+.allergen-config:hover {
+  background-color: var(--color-accent);
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }
