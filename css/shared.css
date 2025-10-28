@@ -131,7 +131,7 @@ body {
 .nav-logo {
   cursor: pointer;
   margin-left: 30px;
-  height: 60px;
+  height: 100px;
 }
 
 .logo-link:hover img {
