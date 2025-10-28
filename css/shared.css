@@ -32,7 +32,7 @@ body {
 }
 
 /* ----- button styles ----- */
-.button, .button1, .button2 {
+.button, .button1, .button2, .button3 {
   transition: background-color 0.2s ease;
   cursor: pointer;
   margin: 4px 2px;
@@ -45,6 +45,11 @@ body {
   text-decoration: none;
 }
 
+.button3 {
+  width: 12vw;
+  margin-left: 1vw;
+}
+
 .button {
   background-color: var(--color-accent);
 }
@@ -53,7 +58,7 @@ body {
   background-color: #5a79c8;
 }
 
-.button2 {
+.button2, .button3 {
   background-color: #3c339a;
 }
 

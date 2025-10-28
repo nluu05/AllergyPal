@@ -1,9 +1,14 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   // load header & footer
-  fetch("includes/navbar.html")
+  fetch("includes/navbar-guest.html")
     .then(res => res.ok ? res.text() : Promise.reject(res))
-    .then(html => (document.getElementById("navbar").innerHTML = html))
+    .then(html => (document.getElementById("navbar-guest").innerHTML = html))
+    .catch(err => console.error("Error loading navbar:", err));
+
+  fetch("includes/navbar-user.html")
+    .then(res => res.ok ? res.text() : Promise.reject(res))
+    .then(html => (document.getElementById("navbar-user").innerHTML = html))
     .catch(err => console.error("Error loading navbar:", err));
 
   fetch("includes/footer.html")
