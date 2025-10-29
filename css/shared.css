@@ -114,12 +114,15 @@ body {
 /* username */
 .username-display {
   color: var(--color-dark-blue);  
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   font-weight: bold;
-  padding: 8px 16px;
+  padding: 8px 10px;
   border-radius: 8px;
-  background-color: var(--color-main);  
-  white-space: nowrap;  
+  background-color: var(--color-main);    
+  max-width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* nav link spacing */
