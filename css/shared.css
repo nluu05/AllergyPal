@@ -111,6 +111,17 @@ body {
   background-color: transparent;
 }
 
+/* username */
+.username-display {
+  color: var(--color-dark-blue);  
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: var(--color-main);  
+  white-space: nowrap;  
+}
+
 /* nav link spacing */
 .nav-links {
   display: flex;
@@ -135,7 +146,7 @@ body {
 /* ----- icon redirects ----- */
 .nav-logo {
   cursor: pointer;
-  margin-left: 30px;
+  margin-left: calc(10%-20px);
   height: 100px;
 }
 
