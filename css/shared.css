@@ -149,7 +149,7 @@ body {
 /* ----- icon redirects ----- */
 .nav-logo {
   cursor: pointer;
-  margin-left: calc(10%-20px);
+  margin-left: calc(10% - 20px);
   height: 100px;
 }
 
@@ -166,7 +166,6 @@ body {
 .nav-icon {
   background-color: transparent;
   width: 5vw;
-  height: 150px;
   height: auto;
 }
 
@@ -192,11 +191,11 @@ footer {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
+}
 
-  p {
-    margin-top: 3vw;
-    margin-left: 1vw;
-  }
+footer p {
+  margin-top: 3vw;
+  margin-left: 1vw;
 }
 
 .box-container {
@@ -214,14 +213,14 @@ footer {
   display: flex;
   position: relative;
   flex-direction: column;
+}
 
-  h3 {
-    font-size: 1rem;
-  }
+.box h3 {
+  font-size: 1rem;
+}
 
-  p {
-    font-size: 1rem;
-  }
+.box p {
+  font-size: 1rem;
 }
 
 .box a {
