@@ -22,8 +22,8 @@
 }
 
 .scan-button {
-    margin-top: 1.5rem;
-    padding: 0.75rem;
+  margin-top: 1.5rem;
+  padding: 0.75rem;
 }
 
 /* --- Previously Viewed Products --- */
@@ -43,10 +43,11 @@
 }
 
 .pv__card {
-  grid-column: span 4; /* 3 across on desktop */
+  grid-column: span 4;
+  /* 3 across on desktop */
   background: #fff;
   border-radius: 14px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
   border: 1px solid #eee;
   padding: 1.25rem;
   display: grid;
@@ -56,10 +57,11 @@
   transition: transform .08s ease, box-shadow .08s ease;
   cursor: pointer;
 }
+
 .pv__card:focus,
 .pv__card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   outline: none;
 }
 
@@ -79,7 +81,8 @@
   font-weight: 700;
   margin: 0 0 0.35rem;
   font-size: 1.05rem;
-  color: #222; /* stands out against your grey body text */
+  color: #222;
+  /* stands out against your grey body text */
 }
 
 .pv__meta {
@@ -98,10 +101,10 @@
 }
 
 .review-card {
-  grid-column: span 3; 
+  grid-column: span 3;
   background: #fff;
   border-radius: 14px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
   border: 1px solid #eee;
   padding: 2rem;
   display: grid;
@@ -116,4 +119,26 @@
 
 
 
+/* styles for reviews section */
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: var(--color-main);
+  padding: 2rem;
+}
 
+.review-card {
+  grid-column: span 3;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  border: 1px solid #eee;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 1rem;
+  align-items: center;
+  transition: transform .08s ease, box-shadow .08s ease;
+  cursor: pointer;
+}
