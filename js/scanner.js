@@ -9,7 +9,7 @@ let stream;
 // Start webcam
 async function startCamera() {
   try {
-    stream = await navigator.mediaDevices.getUserMedia({ video: true });
+    stream = await navigator.mediaDevices.getUserMedia({ video: true })
     video.srcObject = stream;
   } catch (err) {
     alert('Cannot access camera: ' + err.message);
