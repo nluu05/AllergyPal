@@ -1,1 +1,3 @@
 CREATE DATABASE IF NOT EXISTS allergydb;
+
+test
