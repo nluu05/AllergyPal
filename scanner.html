@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AllergyPal - Label Scanner</title>
-  <link rel="stylesheet" type="text/css" href="css/shared.css">
-  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AllergyPal • Label Scanner</title>
+
+  <link rel="stylesheet" type="text/css" href="css/shared.css" />
+  <link rel="stylesheet" type="text/css" href="css/usermain.css" />
+
+  <script src="js/main.js" defer></script>
+
   <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
   <script src="js/scanner.js" defer></script>
 </head>
 
 <body>
   <div id="navbar"></div>
+
   <main>
-    <div class="register-container font">
-      <h1>Label Scanner</h1>
+    <div class="scanner-container font" style="margin-top: 120px; text-align:center;">
+      <h1 style="color: var(--color-dark-blue);">Label Scanner</h1>
       <p>Point your camera at a food label and press <strong>Scan</strong> to extract text.</p>
 
       <div class="scanner-view">
         <video id="video" autoplay playsinline></video>
-        <canvas id="canvas" style="display: none;"></canvas>
+        <canvas id="canvas" style="display:none;"></canvas>
       </div>
 
       <div class="button-group">
-        <button id="scan-button" class="register-button">Scan</button>
-        <button id="stop-button" class="register-button">Stop Camera</button>
+        <button id="scan-button" class="button">Scan</button>
+        <button id="stop-button" class="button2">Stop Camera</button>
       </div>
-        
-      <h2>Detected Text:</h2>
+
+      <h2 style="color: var(--color-dark-blue); margin-top: 2rem;">Detected Text:</h2>
       <pre id="output-text" class="output-box"></pre>
     </div>
   </main>
 </body>
-
 </html>
