@@ -37,7 +37,7 @@
 
 .pv__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);  
+  grid-template-columns: repeat(3, 1fr); 
   gap: 1.5rem;
   margin-top: 1rem;
 }
@@ -54,10 +54,9 @@
 }
 
 .pv__card {
-  grid-column: span 4; /* 3 across on desktop */
   background: #fff;
   border-radius: 14px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
   border: 1px solid #eee;
   padding: 1.25rem;
   display: flex;
@@ -66,10 +65,11 @@
   transition: transform .08s ease, box-shadow .08s ease;
   cursor: pointer;
 }
-.pv__card:focus,
-.pv__card:hover {
+
+.pv__card:hover,
+.pv__card:focus {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   outline: none;
 }
 
@@ -105,7 +105,10 @@
   font-weight: 700;
   margin: 0 0 0.35rem;
   font-size: 1.05rem;
-  color: #222; /* stands out against your grey body text */
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .pv__meta {
@@ -129,10 +132,9 @@
 }
 
 .review-card {
-  grid-column: span 3; 
   background: #fff;
   border-radius: 14px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
   border: 1px solid #eee;
   padding: 2rem;
   display: grid;
@@ -142,9 +144,3 @@
   transition: transform .08s ease, box-shadow .08s ease;
   cursor: pointer;
 }
-
-
-
-
-
-
