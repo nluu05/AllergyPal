@@ -40,7 +40,8 @@ if (!isset($dbName))
 $conn = new mysqli($dbLocation,
                      $dbUsername,
                      $dbPassword,
-                     $dbName);
+                     $dbName,
+                    8889);
 if (mysqli_connect_errno() || ($conn == null))
 {
     printf("Database connection failed: %s<br>
