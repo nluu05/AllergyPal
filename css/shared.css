@@ -322,31 +322,3 @@ footer p {
   gap: 10px;
 }
 
-.search-bar {
-  display: flex;
-  align-items: center;
-  margin: 0 1vw;
-}
-
-.search-bar input {
-  width: 15vw;
-  min-width: 150px;
-  max-width: 250px;
-  padding: 8px 12px;
-  border: 2px solid var(--color-main);
-  border-radius: 8px;
-  background-color: var(--color-main);
-  color: var(--color-dark-blue);
-  font-size: 0.9rem;
-  outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.search-bar input::placeholder {
-  color: #b0b0b0; 
-}
-
-.search-bar input:focus {
-  border-color: var(--color-accent);
-  box-shadow: 0 0 4px rgba(95, 183, 207, 0.4);
-}
