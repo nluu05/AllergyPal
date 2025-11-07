@@ -1,24 +1,43 @@
-<nav class="topnav">
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+<nav class="topnav" role="navigation" aria-label="Primary">
   <a href="usermain.html" class="logo-link">
     <img src="images/peanut.png" alt="AllergyPal Logo" class="nav-logo">
   </a>
 
-  <span class="username-display"></span>
+  <span class="username-display" id="usernameDisplay"></span>
 
   <div class="nav-links">
     <a class="button" href="usermain.html">Home</a>
-    <a class="button" href="#">Scan</a>
-    <a class="button" href="#">Search</a>
-    <a class="button" href="#">About Us</a>
-    <a class="button" href="#">Contact</a>
+    <a class="button" href="scanner.html">Scanner</a>
 
-    <a href="#" class="icon-link">
-      <img src="images/settings-icon.png" alt="Settings" class="nav-icon">
-    </a>
-    <a href="profile.html" class="icon-link">
-      <img src="images/profile-picture.png" alt="Profile" class="nav-icon">
+    <div class="dropdown button">
+      <button
+        id="searchDropdownBtn"
+        class="dropbtn button"
+        aria-haspopup="true"
+        aria-expanded="false"
+      > Search Scans 
+      </button>
+
+      <div id="searchDropdown" class="dropdown-content button" role="menu">
+        <input id="dropdownFilter" class="dropdown-filter " type="text" placeholder="Filter scans…" />
+        <a href="cookies.html" role="menuitem"> COOKIES </a>
+        <a href="cookies.html" role="menuitem"> COOKIES </a>
+        <a href="cookies.html" role="menuitem"> COOKIES </a>
+      </div>
+    </div>
+
+    <a href="profile.html" class="icon-link" aria-label="Profile">
+      <img src="images/profile-picture.png" alt="" class="nav-icon">
     </a>
 
-    <a class="button3" href="guestmain.html" onclick="logout(); return false">Log out</a>
+    <a class="logout-button button" href="guestmain.html" id="logoutBtn">Log out</a>
   </div>
 </nav>
+</body>
+</html>
