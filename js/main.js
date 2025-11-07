@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// login related helper functions
 function login(username) {
   localStorage.setItem("isLoggedIn", "true");
   localStorage.setItem("username", username);
@@ -76,3 +75,4 @@ function logout() {
   localStorage.removeItem("username");
   window.location.href = "guestmain.html";
 }
+
