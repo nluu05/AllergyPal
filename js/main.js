@@ -1,27 +1,38 @@
 document.addEventListener("DOMContentLoaded", () => {
   // load proper navbar
   const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
-
+  console.log("loaded");
   const navbarFile = isLoggedIn
     ? "includes/navbar-user.html"
     : "includes/navbar-guest.html";
   const navbarContainer = document.getElementById("navbar");
 
   if (navbarContainer) {
+    // navbarContainer.innerHTML = "";
+
     fetch(navbarFile)
       .then((res) => (res.ok ? res.text() : Promise.reject(res)))
       .then((html) => {
         navbarContainer.innerHTML = html;
-        
+
         // username
         if (isLoggedIn) {
-          const username = localStorage.getItem('username');
-          const usernameDisplay = document.querySelector('.username-display');
+          const username = localStorage.getItem("username");
+          const usernameDisplay = document.querySelector(".username-display");
           if (usernameDisplay && username) {
             usernameDisplay.textContent = "Hello, " + username + "!";
           }
         }
+
+        const logoutBtn = document.getElementById("logoutBtn");
+        if (logoutBtn) {
+          logoutBtn.addEventListener("click", (e) => {
+            e.preventDefault(); 
+            logout();
+          });
+        }
       })
+
       .catch((err) => console.error("Error loading navbar:", err));
   }
 
@@ -50,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.querySelector(".register-form");
   if (loginForm && window.location.pathname.includes("login.html")) {
     loginForm.addEventListener("submit", (e) => {
-      e.preventDefault(); 
+      e.preventDefault();
 
       const username = document.getElementById("username").value;
       const password = document.getElementById("password").value;

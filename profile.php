@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AllergyPal</title>
   <link rel="stylesheet" type="text/css" href="css/shared.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
   <link rel="stylesheet" type="text/css" href="css/profile.css">
 </head>
 
