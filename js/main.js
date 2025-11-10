@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const navbarContainer = document.getElementById("navbar");
 
   if (navbarContainer) {
-    // navbarContainer.innerHTML = "";
 
     fetch(navbarFile)
       .then((res) => (res.ok ? res.text() : Promise.reject(res)))

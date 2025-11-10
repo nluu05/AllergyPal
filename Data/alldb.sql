@@ -20,5 +20,14 @@ CREATE TABLE saved_allergens (
         ON UPDATE CASCADE
 );
 
+CREATE TABLE previously_viewed_products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    profile_id INT NOT NULL,
+    product_name VARCHAR(100) NOT NULL,
+    product_path VARCHAR(100) NOT NULL,
+    viewed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (profile_id) REFERENCES profile(id)
+)
+
 -- Add queries for dummy data profile and maybe saved allergens 
 -- 
