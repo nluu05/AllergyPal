@@ -8,9 +8,8 @@
   <link rel="stylesheet" type="text/css" href="css/shared.css">
   <link rel="stylesheet" type="text/css" href="css/nav.css">
   <link rel="stylesheet" type="text/css" href="css/profile.css">
+  <script src="js/main.js" defer></script>
 </head>
-
-<script src="js/main.js" defer></script>
 
 <body>
   <div id="navbar"></div>
@@ -21,29 +20,47 @@
         <h1>My Profile</h1>
         <img src="images/cookie.gif" alt="Profile picture" class="profile-icon">
       </div>
+
       <div class="profile-allergens-container">
         <div class="saved-allergens">
           <h1>Saved Allergens</h1>
+
           <div class="button-row">
-            <button class="allergen-config">(+) Add Allergen</button>
-            <button class="allergen-config">(-) Remove Allergen</button>
+            <div class="allergen-control">
+              <label for="allergen-add-select">Add allergen:</label>
+              <select id="allergen-add-select">
+                <option value="" disabled selected>Select an allergen</option>
+                <option value="peanuts">Peanuts</option>
+                <option value="tree_nuts">Tree Nuts</option>
+                <option value="milk">Milk</option>
+                <option value="eggs">Eggs</option>
+                <option value="fish">Fish</option>
+                <option value="shellfish">Shellfish</option>
+                <option value="wheat">Wheat</option>
+                <option value="soy">Soy</option>
+                <option value="sesame">Sesame</option>
+                <option value="mustard">Mustard</option>
+                <option value="sulfites">Sulfites</option>
+              </select>
+              <button id="add-allergen-btn" class="allergen-config">Add</button>
+            </div>
+
+            <div class="allergen-control">
+              <label for="allergen-remove-select">Remove allergen:</label>
+              <select id="allergen-remove-select">
+                <option value="" disabled selected>Select an allergen</option>
+              </select>
+              <button id="remove-allergen-btn" class="allergen-config">Remove</button>
+            </div>
           </div>
         </div>
-        <ul class="allergens-display">
-          <li>Peanuts</li>
-          <li>Tree Nuts (e.g., almonds, walnuts, cashews)</li>
-          <li>Milk</li>
-          <li>Eggs</li>
-          <li>Fish</li>
-          <li>Shellfish (e.g., shrimp, crab, lobster)</li>
-          <li>Wheat</li>
-          <li>Soy</li>
-          <li>Sesame</li>
-          <li>Mustard</li>
-          <li>Sulfites</li>
+
+        <ul class="allergens-display" id="allergen-list">
         </ul>
       </div>
+    </div>
   </main>
+
   <div id="footer"></div>
 </body>
 

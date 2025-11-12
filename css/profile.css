@@ -24,7 +24,6 @@ body {
   height: auto;
 }
 
-/* ----- left side ----- */
 .profile-main {
   display: flex;
   flex-direction: column;
@@ -32,7 +31,7 @@ body {
 }
 
 .profile-main img {
-  width: 100%;
+  width: 500px;
   height: auto;
 }
 
@@ -40,7 +39,6 @@ body {
   font-size: 3vw;
 }
 
-/* ----- right side ----- */
 .profile-allergens-container {
   display: flex;
   flex-direction: column;
@@ -48,37 +46,58 @@ body {
   text-align: left;
 }
 
-/* saved allergens label + buttons */
 .saved-allergens {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: left;
+  gap: 1rem;
 }
 
 .saved-allergens h1 {
   font-size: 3vw;
+  margin: 0;
 }
 
 .button-row {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
-  margin-top: 1.3rem;
-  margin-left: 3.5rem;
-  height: 3rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.allergen-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 16rem;
+}
+
+.allergen-control label {
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.allergen-control select {
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--color-dark-blue);
+  font-size: 1.2vw;
+  background-color: #fff;
+  color: var(--color-black);
+  outline: none;
 }
 
 .allergen-config {
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.15s ease, filter 0.15s ease;
   cursor: pointer;
-  margin: 4px 2px;
   border: none;
   border-radius: 12px;
   background-color: var(--color-dark-blue);
-  padding: 10px 20px;
-  width: 18vw;
+  padding: 0.5rem 1rem;
+  width: 100%;
   color: var(--color-main);
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   text-align: center;
   text-decoration: none;
 }
@@ -88,8 +107,6 @@ body {
   filter: brightness(1.1);
   background-color: var(--color-accent);
 }
-
-/* list of allergens */
 
 .allergens-display {
   display: flex;
@@ -102,6 +119,7 @@ body {
   overflow-y: scroll;
   list-style-type: none;
   text-align: left;
+  margin-top: 2rem;
 }
 
 .allergens-display li {

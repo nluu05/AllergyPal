@@ -86,3 +86,83 @@ function logout() {
   localStorage.removeItem("username");
   window.location.href = "guestmain.html";
 }
+
+// allergen management
+document.addEventListener('DOMContentLoaded', () => {
+  const addSelect = document.getElementById('allergen-add-select');
+  const addBtn = document.getElementById('add-allergen-btn');
+  const removeSelect = document.getElementById('allergen-remove-select');
+  const removeBtn = document.getElementById('remove-allergen-btn');
+  const listEl = document.getElementById('allergen-list');
+
+  const allergenLabels = {
+    peanuts: 'Peanuts',
+    tree_nuts: 'Tree Nuts (e.g., almonds, walnuts, cashews)',
+    milk: 'Milk',
+    eggs: 'Eggs',
+    fish: 'Fish',
+    shellfish: 'Shellfish (e.g., shrimp, crab, lobster)',
+    wheat: 'Wheat',
+    soy: 'Soy',
+    sesame: 'Sesame',
+    mustard: 'Mustard',
+    sulfites: 'Sulfites'
+  };
+
+  let currentAllergens = [];
+
+  function renderRemoveDropdown() {
+    removeSelect.innerHTML = '';
+
+    const placeholder = document.createElement('option');
+    placeholder.value = '';
+    placeholder.disabled = true;
+    placeholder.selected = true;
+    placeholder.textContent = 'Select an allergen';
+    removeSelect.appendChild(placeholder);
+
+    currentAllergens.forEach((value) => {
+      const opt = document.createElement('option');
+      opt.value = value;
+      opt.textContent = allergenLabels[value];
+      removeSelect.appendChild(opt);
+    });
+  }
+
+  function renderAllergenList() {
+    listEl.innerHTML = '';
+    currentAllergens.forEach((value) => {
+      const li = document.createElement('li');
+      li.dataset.value = value;
+      li.textContent = allergenLabels[value];
+      listEl.appendChild(li);
+    });
+  }
+
+  function renderAll() {
+    renderAllergenList();
+    renderRemoveDropdown();
+  }
+
+  addBtn.addEventListener('click', () => {
+    const value = addSelect.value;
+    if (!value) return;
+
+    if (!currentAllergens.includes(value)) {
+      currentAllergens.push(value);
+    }
+
+    addSelect.value = '';
+    renderAll();
+  });
+
+  removeBtn.addEventListener('click', () => {
+    const value = removeSelect.value;
+    if (!value) return;
+
+    currentAllergens = currentAllergens.filter(a => a !== value);
+    renderAll();
+  });
+
+  renderAll();
+});
