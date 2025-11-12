@@ -98,14 +98,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const allergenLabels = {
     peanuts: 'Peanuts',
     tree_nuts: 'Tree Nuts (e.g., almonds, walnuts, cashews)',
-    milk: 'Milk',
+    dairy: 'Dairy',
     eggs: 'Eggs',
     fish: 'Fish',
     shellfish: 'Shellfish (e.g., shrimp, crab, lobster)',
     wheat: 'Wheat',
     soy: 'Soy',
     sesame: 'Sesame',
-    mustard: 'Mustard',
+    chocolate: 'Chocolate',
     sulfites: 'Sulfites'
   };
 
