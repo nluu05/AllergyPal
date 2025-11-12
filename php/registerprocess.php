@@ -51,7 +51,7 @@ $conn->close();
 	</div>
     
     <div class='center-home' style="text-align: center; margin: 20px;">
-        <a href="index.html" style="
+        <a href="../usermain.html" style="
             display: inline-block;
             padding: 10px 20px;
             background-color: #007BFF;
