@@ -1,0 +1,37 @@
+<?php include("Data/dbConnect.php") ?>
+<!-- TODO Add all links to login.php -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AllergyPal</title>
+    <link rel="stylesheet" type="text/css" href="css/shared.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+  </head>
+
+  <script src="js/main.js" defer></script>
+
+  <body>
+    <div id="navbar"></div>
+    <main>
+      <div class="register-container font">
+        <h1>Login</h1>
+        <h2>
+          Don't have an account?
+          <a href="register.php">Create an account</a>
+        </h2>
+        <form class="register-form" id="login-form" method="POST" action="php/loginprocess.php">
+          <label for="username">Username or Email:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit" class="register-button">Login</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
