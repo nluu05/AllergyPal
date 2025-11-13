@@ -106,7 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
     soy: 'Soy',
     sesame: 'Sesame',
     chocolate: 'Chocolate',
-    sulfites: 'Sulfites'
+    sulfites: 'Sulfites',
+    other: 'Other'
   };
 
   let currentAllergens = [];
