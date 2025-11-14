@@ -9,6 +9,23 @@
   <link rel="stylesheet" type="text/css" href="css/nav.css">
   <link rel="stylesheet" type="text/css" href="css/profile.css">
   <script src="js/main.js" defer></script>
+  <script>
+  // Link php session with the correct html navbar in includes/navbar-user.html
+  // Used source of inspiration/help: https://javascript.info/localstorage
+  // TODO: Fix double home button
+  fetch("php/checksession.php")
+    .then(res => res.json())
+    .then(data => {
+      if (data.loggedIn) {
+        localStorage.setItem("isLoggedIn", "true");
+        localStorage.setItem("username", data.username);
+      } else {
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("username");
+      }
+    });
+</script>
+
 </head>
 
 <body>

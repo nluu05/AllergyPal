@@ -1,0 +1,3 @@
+TODOS before submission
+- Make sure login.php and register.php are properly linked
+- Fix the bug where two home tabs appear (probably due to interference with navbar-guest and navbar-user)
