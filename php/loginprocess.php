@@ -32,7 +32,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
             $_SESSION["username"] = $row["username"];
             $_SESSION["email"] = $row["email"];
 
-            header( "Location: ../profile.html");
+            // JS flags to set isLoggedIn true
+            echo "
+                <script>
+                    localStorage.setItem('isLoggedIn', 'true');
+                    localStorage.setItem('username', '" . addslashes($row["username"]) . "');
+                    window.location.href = '../usermain.html';
+                </script>
+            ";
+
             exit();
         } else {
             echo("Wrong password");

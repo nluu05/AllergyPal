@@ -1,85 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AllergyPal</title>
+    <link rel="icon" href="images/peanut.png" />
+    <link rel="stylesheet" type="text/css" href="css/shared.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/profile.css" />
+    <script>
+      // Link php session with the correct html navbar in includes/navbar-user.html
+      // Used source of inspiration/help: https://javascript.info/localstorage
+      // TODO: Fix double home button
+      fetch("php/checksession.php")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.loggedIn) {
+            localStorage.setItem("isLoggedIn", "true");
+            localStorage.setItem("username", data.username);
+          } else {
+            localStorage.removeItem("isLoggedIn");
+            localStorage.removeItem("username");
+          }
+        });
+    </script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AllergyPal</title>
-  <link rel="stylesheet" type="text/css" href="css/shared.css">
-  <link rel="stylesheet" type="text/css" href="css/nav.css">
-  <link rel="stylesheet" type="text/css" href="css/profile.css">
-  <script src="js/main.js" defer></script>
-  <script>
-  // Link php session with the correct html navbar in includes/navbar-user.html
-  // Used source of inspiration/help: https://javascript.info/localstorage
-  // TODO: Fix double home button
-  fetch("php/checksession.php")
-    .then(res => res.json())
-    .then(data => {
-      if (data.loggedIn) {
-        localStorage.setItem("isLoggedIn", "true");
-        localStorage.setItem("username", data.username);
-      } else {
-        localStorage.removeItem("isLoggedIn");
-        localStorage.removeItem("username");
-      }
-    });
-</script>
+  <body>
+    <div id="navbar"></div>
 
-</head>
-
-<body>
-  <div id="navbar"></div>
-
-  <main>
-    <div class="profile-container">
-      <div class="profile-main">
-        <h1>My Profile</h1>
-        <img src="images/cookie.gif" alt="Profile picture" class="profile-icon">
-      </div>
-
-      <div class="profile-allergens-container">
-        <div class="saved-allergens">
-          <h1>Saved Allergens</h1>
-
-          <div class="button-row">
-            <div class="allergen-control">
-              <label for="allergen-add-select">Add allergen:</label>
-              <select id="allergen-add-select">
-                <option value="" disabled selected>Select an allergen</option>
-                <option value="peanuts">Peanuts</option>
-                <option value="tree_nuts">Tree Nuts</option>
-                <option value="dairy">Dairy</option>
-                <option value="eggs">Eggs</option>
-                <option value="fish">Fish</option>
-                <option value="shellfish">Shellfish</option>
-                <option value="wheat">Wheat</option>
-                <option value="soy">Soy</option>
-                <option value="sesame">Sesame</option>
-                <option value="chocolate">Chocolate</option>
-                <option value="sulfites">Sulfites</option>
-                <option value="other">Other</option>
-              </select>
-              <button id="add-allergen-btn" class="allergen-config">Add</button>
-            </div>
-
-            <div class="allergen-control">
-              <label for="allergen-remove-select">Remove allergen:</label>
-              <select id="allergen-remove-select">
-                <option value="" disabled selected>Select an allergen</option>
-              </select>
-              <button id="remove-allergen-btn" class="allergen-config">Remove</button>
-            </div>
-          </div>
+    <main>
+      <div class="profile-container">
+        <div class="profile-main">
+          <h1>My Profile</h1>
+          <img
+            src="images/cookie.gif"
+            alt="Profile picture"
+            class="profile-icon"
+          />
         </div>
 
-        <ul class="allergens-display" id="allergen-list">
-        </ul>
+        <div class="profile-allergens-container">
+          <div class="saved-allergens">
+            <h1>Saved Allergens</h1>
+
+            <div class="button-row">
+              <div class="allergen-control">
+                <label for="allergen-add-select">Add allergen:</label>
+                <select id="allergen-add-select">
+                  <option value="" disabled selected>Select an allergen</option>
+                  <option value="peanuts">Peanuts</option>
+                  <option value="tree_nuts">Tree Nuts</option>
+                  <option value="dairy">Dairy</option>
+                  <option value="eggs">Eggs</option>
+                  <option value="fish">Fish</option>
+                  <option value="shellfish">Shellfish</option>
+                  <option value="wheat">Wheat</option>
+                  <option value="soy">Soy</option>
+                  <option value="sesame">Sesame</option>
+                  <option value="chocolate">Chocolate</option>
+                  <option value="sulfites">Sulfites</option>
+                  <option value="other">Other</option>
+                </select>
+                <button id="add-allergen-btn" class="allergen-config">
+                  Add
+                </button>
+              </div>
+
+              <div class="allergen-control">
+                <label for="allergen-remove-select">Remove allergen:</label>
+                <select id="allergen-remove-select">
+                  <option value="" disabled selected>Select an allergen</option>
+                </select>
+                <button id="remove-allergen-btn" class="allergen-config">
+                  Remove
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <ul class="allergens-display" id="allergen-list"></ul>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <div id="footer"></div>
-</body>
-
+    <div id="footer"></div>
+    <script src="js/main.js" defer></script>
+  </body>
 </html>

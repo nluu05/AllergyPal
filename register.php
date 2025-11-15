@@ -6,13 +6,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AllergyPal</title> 
+  <title>AllergyPal</title>
+  <link rel="icon" href="images/peanut.png" />
   <link rel="stylesheet" type="text/css" href="css/shared.css">
   <link rel="stylesheet" type="text/css" href="css/nav.css">
   <link rel="stylesheet" type="text/css" href="css/register.css">
 </head>
-
-<script src="js/main.js" defer></script>
 
 <body>
   <div id="navbar"></div>
@@ -34,6 +33,7 @@
       </form>
     </div>
   </main>
+  <script src="js/main.js" defer></script>
 </body>
 
 </html>
