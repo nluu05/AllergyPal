@@ -46,12 +46,13 @@ cd AllergyPal
 
 ### 8. Configure Ports under MAMP -> Preferences -> Ports
 [TODO: Picture here of MAMP -> Preferences]
+
 [TODO: Picture here of Ports]
 
 ### 9. Select `MAMP default` and click `OK`
 
 ### 10. Take note of your Apache Port
-This will be used later in step X
+This will be used later in step 16.
 
 ### 11. Click `Start Servers`
 Wait for it to finish starting. This will be indicated via the `Apache Server` and `MySQL Server` indicator nodes in the top right.
@@ -66,13 +67,17 @@ Wait for it to finish starting. This will be indicated via the `Apache Server` a
 ### 15. Paste in contents from step 6 and click `Go`
 [TODO: Picture here]
 
-### 16. Navigate to Apache Port localhost
+### 16. Navigate to Apache Port localhost in your browser
 ```
 http://localhost:[APACHE_PORT]
 ```
+Refer to step 10 for Apache Port.
+
 [TODO: Picture here]
 ### 17. Click into `AllergyPal`
 
 ### 18. Click into `guestmain.html`
+
+
 
 
