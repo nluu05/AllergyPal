@@ -2,7 +2,7 @@
 
 AllergyPal is an application used to quickly identify the allergens of concern for the user on products. The user can either utilize a device's camera to scan a bar code or directly search via keyword to retrieve the nutrition facts and ingredients of a given product. Users have the ability to customize their allergens of concern.
 
-# Installation
+## Installation
 ###  1. Install MAMP
 Navigate to in your browser:
 ```bash
@@ -11,18 +11,18 @@ https://www.mamp.info/en/downloads/
 Scroll down to download for your respective `OS` (mac/Windows) and `architecture` (ARM/Intel CPU). The most recent version of MAMP will be on the top.
 
 #### Check your architecture (for `macOS` only)
-Open Terminal, then run:
+Open Terminal and run:
 ```
 uname -m
 ```
-| Output Example | Meaning (CPU)                                           |
-| -------------- | -------------------------------------------------- |
-| `x86_64`       | **Intel**                       |
-| `i386`         | **Intel** |
-| `arm64`        | **ARM**          |
+| Output Example | Meaning                      |
+| -------------- | ---------------------------- |
+| `x86_64`       | Intel (64-bit)               |
+| `i386`         | Older Intel (32-bit)         |
+| `arm64`        | Apple Silicon ARM (M1/M2/M3) |
 
-### 2. Run Set up Wizard for MAMP and install
-### 3. Open File Explorer and locate htdocs folder
+### 2. Run the MAMP Setup Wizard and install
+### 3. Open File Explorer and locate your `htdocs` folder
 Navigate to your MAMP installation directory and open the `htdocs` folder.
 
 Default location (Windows):
@@ -31,11 +31,11 @@ Default location (Windows):
 Default location (macOS):
 `/Applications/MAMP/htdocs` (Need verification)
 
-If you installed MAMP somewhere else, simply open your MAMP installation folder and locate the htdocs directory inside it.
-### 4. Delete index file in htdocs
+If you installed MAMP somewhere else, simply open your custom MAMP installation folder and locate the htdocs directory inside it.
+### 4. Delete the index file inside `htdocs`
 [TODO: Picture here]
 
-### 5. Open htdocs in your IDE and clone the repo
+### 5. Open `htdocs` in your IDE and clone the repo
 ```
 git clone https://github.com/nluu05/AllergyPal.git
 cd AllergyPal
