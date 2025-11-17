@@ -40,7 +40,7 @@ If you installed MAMP somewhere else, simply open your MAMP installation folder 
 git clone https://github.com/nluu05/AllergyPal.git
 cd AllergyPal
 ```
-### 6. Open the file `AllergyPal/Data/alldb.sql` and copy its contents to your clipboard.
+### 6. Open the file `AllergyPal/Data/alldb.sql` and copy its contents to your clipboard
 
 ### 7. Run and open MAMP as `administrator`
 
@@ -48,19 +48,31 @@ cd AllergyPal
 [TODO: Picture here of MAMP -> Preferences]
 [TODO: Picture here of Ports]
 
-Select `MAMP default`. Click `OK`.
-### 9. Click `Start Servers`
+### 9. Select `MAMP default` and click `OK`
+
+### 10. Take note of your Apache Port
+This will be used later in step X
+
+### 11. Click `Start Servers`
 Wait for it to finish starting. This will be indicated via the `Apache Server` and `MySQL Server` indicator nodes in the top right.
-### 10. `Open WebStart Page`
+### 12. `Open WebStart Page`
 
-### 11. Navigate to Tools -> PHPMYADMIN
+### 13. Navigate to Tools -> PHPMYADMIN
 [TODO: Picture here]
 
-### 12. Navigate to SQL
+### 14. Navigate to SQL
 [TODO: Picture here]
 
-### 13. Paste in contents from step 6 and click `Go.`
+### 15. Paste in contents from step 6 and click `Go`
 [TODO: Picture here]
 
+### 16. Navigate to Apache Port localhost
+```
+http://localhost:[APACHE_PORT]
+```
+[TODO: Picture here]
+### 17. Click into `AllergyPal`
+
+### 18. Click into `guestmain.html`
 
 
