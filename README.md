@@ -15,6 +15,7 @@ AllergyPal is an application used to quickly identify the allergens of concern f
 - Users can view a product's details.
 
 ## Installation / Setup
+#### Video walkthrough: https://youtu.be/IRUftDE9PnM
 ###  1. Install MAMP
 Navigate to in your browser:
 ```bash
@@ -45,7 +46,7 @@ Default location (macOS):
 
 If you installed MAMP somewhere else, simply open your custom MAMP installation folder and locate the htdocs directory inside it.
 ### 4. Delete the index file inside `htdocs`
-[TODO: Picture here]
+![loclahost](images/htdocs.png)
 
 ### 5. Open `htdocs` in your IDE and clone the repo
 ```
