@@ -99,40 +99,46 @@ Refer to step 10 if needed.
 
 ## Folder Structure
 ```
-AllergyPal/ 
-  css/
-    login.css
-    nav.css
-    profile.css
-    register.css
-    shared.css
-    usermain.css
-  Data/
-    alldb.sql
-    dbConnect.php
-  images/
-  includes/
-    footer.html
-    navbar-guest.html
-    navbar-user.html
-  js/
-    main.js
-    register.js
-    scanner.js
-  php/
-    checksession.php
-    loginprocess.php
-    registerprocess.php
-  cookies.html
-  guestmain.html
-  login.html
-  login.php
-  profile.html
-  profile.php
-  register.php
-  scanner.html
-  usermain.html
-  README.md
+AllergyPal/
+├── css/
+│   ├── login.css
+│   ├── nav.css
+│   ├── profile.css
+│   ├── register.css
+│   ├── shared.css
+│   └── usermain.css
+├── Data/
+│   ├── alldb.sql
+│   └── dbConnect.php
+├── images/
+├── includes/
+│   ├── footer.html
+│   ├── navbar-guest.html
+│   └── navbar-user.html
+├── js/
+│   ├── main.js
+│   ├── register.js
+│   └── scanner.js
+├── php/
+│   ├── checksession.php
+│   ├── loginprocess.php
+│   └── registerprocess.php
+├── cookies.html
+├── guestmain.html
+├── login.html
+├── login.php
+├── profile.html
+├── profile.php
+├── register.php
+├── scanner.html
+├── usermain.html
+└── README.md
 ```
+## Authors
 
-
+## Developed and Tested by
+- **Julia C** — [GitHub Profile](https://github.com/JCode-Art)
+- **Trung H.** — [GitHub Profile](https://github.com/TrungH012006)
+- **David K.** — [GitHub Profile](https://github.com/DKwokAsc)
+- **Nhi L.** — [GitHub Profile](https://github.com/nluu05)
+- **Shelby S.** — [GitHub Profile](https://github.com/TODO)
