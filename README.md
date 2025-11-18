@@ -134,7 +134,6 @@ AllergyPal/
 ├── usermain.html
 └── README.md
 ```
-## Authors
 
 ## Developed and Tested by
 - **Julia C** — [GitHub Profile](https://github.com/JCode-Art)
