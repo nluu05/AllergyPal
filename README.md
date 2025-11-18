@@ -1,6 +1,6 @@
 # AllergyPal
 
-AllergyPal is an application used to quickly identify the allergens of concern for the user on products. The user can either utilize a device's camera to scan a bar code or directly search via keyword to retrieve the nutrition facts and ingredients of a given product. Users have the ability to customize their allergens of concern.
+AllergyPal is an application used to quickly identify the allergens of concern for the user on products. The user can either utilize a device's camera to scan a bar code or directly search via keyword to retrieve the nutrition facts and ingredients of a given product. Users have the ability to customize their allergens of concern on their profile.
 
 ## Installation
 ###  1. Install MAMP
@@ -78,6 +78,12 @@ Refer to step 10 if needed.
 
 ### 18. Click into `guestmain.html`
 
+## Tech stack
+| Category | Technologies       |
+| -------- | ------------------ |
+| Frontend | HTML, CSS, JavaScript |
+| Backend  |   PHP |
+| Database |  MySQL              |
 
 
 
