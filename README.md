@@ -141,4 +141,4 @@ AllergyPal/
 - **Trung H.** — [GitHub Profile](https://github.com/TrungH012006)
 - **David K.** — [GitHub Profile](https://github.com/DKwokAsc)
 - **Nhi L.** — [GitHub Profile](https://github.com/nluu05)
-- **Shelby S.** — [GitHub Profile](https://github.com/TODO)
+- **Shelby S.** — TODO
