@@ -1,4 +1,4 @@
-<img width="1848" height="702" alt="image" src="https://github.com/user-attachments/assets/e5ecd008-0c41-4bbe-874d-f756b0025e41" /># AllergyPal
+# AllergyPal
 
 AllergyPal is an application used to quickly identify the allergens of concern for the user on products. The user can either utilize a device's camera to scan a bar code or directly search via keyword to retrieve the nutrition facts and ingredients of a given product. Users have the ability to customize their allergens of concern on their profile.
 
