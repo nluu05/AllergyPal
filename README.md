@@ -41,7 +41,7 @@ Default location (Windows):
 `C:\MAMP\htdocs`
 
 Default location (macOS):
-`/Applications/MAMP/htdocs` (Need verification)
+`/Applications/MAMP/htdocs`
 
 If you installed MAMP somewhere else, simply open your custom MAMP installation folder and locate the htdocs directory inside it.
 ### 4. Delete the index file inside `htdocs`
@@ -77,7 +77,7 @@ Wait for it to finish starting. This will be indicated via the `Apache Server` a
 ![PHPMYSQL](images/php-sql.png)
 
 ### 15. Paste in contents from step 6 and click `Go`
-![PHPQuery](sql-query/go.png)
+![PHPQuery](images/sql-query.png)
 ![Go](images/go.png)
 
 ### 16. Navigate to Apache Port localhost in your browser
@@ -86,7 +86,7 @@ http://localhost:[APACHE_PORT]
 ```
 Refer to step 9 if needed.
 
-[TODO: Picture here]
+![loclahost](images/index-of.png)
 ### 17. Click into `AllergyPal`
 
 ### 18. Click into `guestmain.html`
