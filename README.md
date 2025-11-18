@@ -77,6 +77,7 @@ Wait for it to finish starting. This will be indicated via the `Apache Server` a
 ![PHPMYSQL](images/php-sql.png)
 
 ### 15. Paste in contents from step 6 and click `Go`
+![PHPQuery](sql-query/go.png)
 ![Go](images/go.png)
 
 ### 16. Navigate to Apache Port localhost in your browser
