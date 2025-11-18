@@ -60,12 +60,11 @@ cd AllergyPal
 ### 8. Configure Ports under MAMP -> Preferences -> Ports
 ![MAMP Preferences](images/mamp-preferences.png)
 
+### 9. Select `MAMP default` and take note of your Apache Port
+You will need this in step 16. Default ports might vary, so it may not match the sample image.
 ![MAMP Ports](images/mamp-ports.png)
 
-### 9. Take note of your Apache Port
-You will need this in step 16.
-
-### 10. Select `MAMP default` and click `OK`
+### 10. Click `Ok`
 
 ### 11. Click `Start Servers`
 Wait for it to finish starting. This will be indicated via the `Apache Server` and `MySQL Server` indicator nodes in the top right.
