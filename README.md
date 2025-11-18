@@ -52,7 +52,7 @@ cd AllergyPal
 ### 9. Select `MAMP default` and click `OK`
 
 ### 10. Take note of your Apache Port
-This will be used later in step 16.
+You will need this in step 16.
 
 ### 11. Click `Start Servers`
 Wait for it to finish starting. This will be indicated via the `Apache Server` and `MySQL Server` indicator nodes in the top right.
@@ -71,7 +71,7 @@ Wait for it to finish starting. This will be indicated via the `Apache Server` a
 ```
 http://localhost:[APACHE_PORT]
 ```
-Refer to step 10 for Apache Port.
+Refer to step 10 if needed.
 
 [TODO: Picture here]
 ### 17. Click into `AllergyPal`
