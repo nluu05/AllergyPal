@@ -2,7 +2,19 @@
 
 AllergyPal is an application used to quickly identify the allergens of concern for the user on products. The user can either utilize a device's camera to scan a bar code or directly search via keyword to retrieve the nutrition facts and ingredients of a given product. Users have the ability to customize their allergens of concern on their profile.
 
-## Installation
+## Features
+### Implemented:
+- Users have numerous ways to access a product they want in a quick manner to look at the details/ingredients. They can either:
+  - Search up a product from our database 
+  - Scan a bar code or label of a product
+- Users can register and sign into their accounts to save their allergens of concern.
+### Planned: 
+- Users will be able to access the history of their scanned/searched products.
+- Allergens of concern will be saved to our server and linked to their profile.
+- Allergens of concern is what will be prioritized in being displayed when a user evaluates a product.
+- Users can view a product's details.
+
+## Installation / Setup
 ###  1. Install MAMP
 Navigate to in your browser:
 ```bash
@@ -85,5 +97,42 @@ Refer to step 10 if needed.
 | Backend  |   PHP |
 | Database |  MySQL              |
 
+## Folder Structure
+```
+AllergyPal/ 
+  css/
+    login.css
+    nav.css
+    profile.css
+    register.css
+    shared.css
+    usermain.css
+  Data/
+    alldb.sql
+    dbConnect.php
+  images/
+  includes/
+    footer.html
+    navbar-guest.html
+    navbar-user.html
+  js/
+    main.js
+    register.js
+    scanner.js
+  php/
+    checksession.php
+    loginprocess.php
+    registerprocess.php
+  cookies.html
+  guestmain.html
+  login.html
+  login.php
+  profile.html
+  profile.php
+  register.php
+  scanner.html
+  usermain.html
+  README.md
+```
 
 
