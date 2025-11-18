@@ -1,4 +1,4 @@
-# AllergyPal
+<img width="1848" height="702" alt="image" src="https://github.com/user-attachments/assets/e5ecd008-0c41-4bbe-874d-f756b0025e41" /># AllergyPal
 
 AllergyPal is an application used to quickly identify the allergens of concern for the user on products. The user can either utilize a device's camera to scan a bar code or directly search via keyword to retrieve the nutrition facts and ingredients of a given product. Users have the ability to customize their allergens of concern on their profile.
 
@@ -57,33 +57,33 @@ cd AllergyPal
 ### 7. Run and open MAMP as `administrator`
 
 ### 8. Configure Ports under MAMP -> Preferences -> Ports
-[TODO: Picture here of MAMP -> Preferences]
+![MAMP Preferences](images/mamp-preferences.png)
 
-[TODO: Picture here of Ports]
+![MAMP Ports](images/mamp-ports.png)
 
-### 9. Select `MAMP default` and click `OK`
-
-### 10. Take note of your Apache Port
+### 9. Take note of your Apache Port
 You will need this in step 16.
+
+### 10. Select `MAMP default` and click `OK`
 
 ### 11. Click `Start Servers`
 Wait for it to finish starting. This will be indicated via the `Apache Server` and `MySQL Server` indicator nodes in the top right.
 ### 12. `Open WebStart Page`
 
 ### 13. Navigate to Tools -> PHPMYADMIN
-[TODO: Picture here]
+![PHPMYADMIN](images/php-my-admin.png)
 
 ### 14. Navigate to SQL
-[TODO: Picture here]
+![PHPMYSQL](images/php-sql.png)
 
 ### 15. Paste in contents from step 6 and click `Go`
-[TODO: Picture here]
+![Go](images/go.png)
 
 ### 16. Navigate to Apache Port localhost in your browser
 ```
 http://localhost:[APACHE_PORT]
 ```
-Refer to step 10 if needed.
+Refer to step 9 if needed.
 
 [TODO: Picture here]
 ### 17. Click into `AllergyPal`
