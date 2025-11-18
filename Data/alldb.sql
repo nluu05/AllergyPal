@@ -4,8 +4,8 @@ USE allergydb;
 
 CREATE TABLE profile (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(100) NOT NULL,
     loggedin_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -38,7 +38,9 @@ CREATE TABLE previously_viewed_products (
     product_path VARCHAR(100) NOT NULL,
     viewed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (profile_id) REFERENCES profile(id)
-)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
 
 -- If necessary:
 
