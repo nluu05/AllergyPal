@@ -1,0 +1,78 @@
+/* Whole page white background */
+body {
+  background: white !important;
+}
+
+/* Layout */
+.product-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* LEFT SIDE: Image + title */
+.product-left-section {
+  text-align: center;
+}
+
+.product-image-large {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 12px;
+}
+
+.product-title-img {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444;
+}
+
+/* RIGHT SIDE INFO */
+.product-info-box {
+  max-width: 420px;
+}
+
+.info-section {
+  margin-bottom: 30px;
+}
+
+.info-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+/* Paragraph rows */
+.info-line {
+  margin: 4px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Note */
+.product-note {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Mobile */
+@media (max-width: 850px) {
+  .product-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-info-box {
+    margin-top: 20px;
+  }
+}
+
+main {
+  padding-top: 120px;  /* adjust to match your navbar height */
+}

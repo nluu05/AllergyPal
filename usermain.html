@@ -7,6 +7,23 @@
     <link rel="icon" href="images/peanut.png" />
     <link rel="stylesheet" type="text/css" href="css/shared.css" />
     <link rel="stylesheet" type="text/css" href="css/usermain.css" />
+
+    <style>
+      /* Add this if it's not already in your CSS */
+      .pv__button {
+        border: none;
+        background: none;
+        padding: 0;
+        width: 100%;
+        cursor: pointer;
+        text-align: left;
+      }
+
+      .pv__button:hover {
+        transform: scale(1.03);
+        transition: 0.2s ease;
+      }
+    </style>
   </head>
 
   <body>
@@ -26,7 +43,8 @@
 
       <section class="product-container font">
         <div class="pv__grid">
-          <article class="pv__card">
+
+          <button class="pv__card pv__button" onclick="location.href='cookies.html?item=cookie'">
             <div class="pv__thumb">
               <img src="images/cookies.png" alt="Chocolate Chip Cookie" />
             </div>
@@ -34,21 +52,19 @@
               <h3 class="pv__name">Chocolate Chip Cookie</h3>
               <p class="pv__meta"><strong>Allergies Present:</strong> None</p>
             </div>
-          </article>
+          </button>
 
-          <article class="pv__card">
+          <button class="pv__card pv__button" onclick="location.href='snickers.html?item=snickers'">
             <div class="pv__thumb">
               <img src="images/snickers.png" alt="Snickers" />
             </div>
             <div class="pv__body">
               <h3 class="pv__name">Snickers</h3>
-              <p class="pv__meta">
-                <strong>Allergies Present:</strong> Peanuts
-              </p>
+              <p class="pv__meta"><strong>Allergies Present:</strong> Peanuts</p>
             </div>
-          </article>
+          </button>
 
-          <article class="pv__card">
+          <button class="pv__card pv__button" onclick="location.href='ryebread.html?item=rye-bread'">
             <div class="pv__thumb">
               <img src="images/rye-bread.webp" alt="Rye Bread" />
             </div>
@@ -56,32 +72,28 @@
               <h3 class="pv__name">Rye Bread</h3>
               <p class="pv__meta"><strong>Allergies Present:</strong> None</p>
             </div>
-          </article>
+          </button>
 
-          <article class="pv__card">
+          <button class="pv__card pv__button" onclick="location.href='trailmix.html?item=trail-mix'">
             <div class="pv__thumb">
               <img src="images/trail-mix.webp" alt="Trail Mix" />
             </div>
             <div class="pv__body">
               <h3 class="pv__name">Trail Mix</h3>
-              <p class="pv__meta">
-                <strong>Allergies Present:</strong> Peanuts
-              </p>
+              <p class="pv__meta"><strong>Allergies Present:</strong> Peanuts</p>
             </div>
-          </article>
+          </button>
 
-          <article class="pv__card">
+          <button class="pv__card pv__button" onclick="location.href='protein.html?item=protein-bar'">
             <div class="pv__thumb">
               <img src="images/protein-bar.png" alt="Protein Bar" />
             </div>
             <div class="pv__body">
               <h3 class="pv__name">Protein Bar</h3>
-              <p class="pv__meta">
-                <strong>Allergies Present:</strong> May contain trace amount of
-                peanuts
-              </p>
+              <p class="pv__meta"><strong>Allergies Present:</strong> May contain trace amount of peanuts</p>
             </div>
-          </article>
+          </button>
+
         </div>
         <div class="divider"></div>
       </section>
@@ -90,6 +102,7 @@
     <div class="review-container font">
       <h1>See our most recent reviews here</h1>
       <h3>What our users are saying:</h3>
+
       <section class="review-section">
         <article class="review-card">
           <h3 class="review-user">Tony R.</h3>
